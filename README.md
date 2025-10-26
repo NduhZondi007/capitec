@@ -128,18 +128,3 @@ mvn test
 
 Tests are written with JUnit 5 and Spring Boot’s test framework.  A sample integration test verifies that
 aggregations work correctly on the preloaded dataset.
-
-## Extending the project
-
-* **Add more data sources:**  Replace or augment `transactions.csv` with other CSVs or integrate with external APIs.
-* **Improve categorisation:**  Use merchant category codes (MCC) or third‑party enrichment services to assign
-  categories more accurately【16†L231-L235】.  You could also persist merchant/category mappings in a database.
-* **Persist to a real database:**  Swap H2 for PostgreSQL or MySQL by changing the datasource properties.  Spring Data
-  JPA will automatically create the schema.
-* **Metrics and monitoring:**  Enable Spring Boot Actuator to expose health and metrics endpoints【33†L260-L267】 and
-  integrate with Prometheus/Grafana.
-
-## License
-
-This project is provided as a sample and does not carry a specific software license.  You are free to use and modify
-it for educational or evaluation purposes.
