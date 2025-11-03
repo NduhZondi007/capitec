@@ -4,7 +4,7 @@ This project implements a **Transaction Aggregation API** for a retail banking s
 transaction data from multiple sources (in this example a CSV file), enriches each transaction with a spending
 category and exposes a set of RESTful endpoints for retrieving aggregated information such as per‑customer spending,
 top spenders and most popular categories.  The goal is to mirror real banking insights like those found in Capitec’s
-app, where customers can see where their money goes【31†L163-L170】.
+app, where customers can see where their money goes.
 
 ## Overview
 
@@ -12,7 +12,7 @@ app, where customers can see where their money goes【31†L163-L170】.
   Each row contains a transaction with fields such as customer, timestamp, merchant and amount.  If a
   category is not provided, the loader uses a simple keyword lookup to assign one of several broad categories (Food,
   Transport, Utilities, Entertainment, Shopping, Healthcare, Communication, Education, Travel, Income, Other).
-* **Categorisation:**  Transaction enrichment is important for personal finance management【16†L231-L235】.  Keywords like
+* **Categorisation:**  Transaction enrichment is important for personal finance management.  Keywords like
   “uber” or “gas” will map to the Transport category.  You can extend the `DataLoader`’s keyword map or supply your
   own categorised dataset.
 * **Aggregation:**  The service aggregates transactions per customer or across all customers.  It calculates total
