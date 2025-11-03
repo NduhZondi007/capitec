@@ -1,6 +1,6 @@
 # Transaction Aggregation API
 
-This project implements a **Transaction Aggregation API** for a Capitec‐like retail banking system.  The service ingests
+This project implements a **Transaction Aggregation API** for a retail banking system.  The service ingests
 transaction data from multiple sources (in this example a CSV file), enriches each transaction with a spending
 category and exposes a set of RESTful endpoints for retrieving aggregated information such as per‑customer spending,
 top spenders and most popular categories.  The goal is to mirror real banking insights like those found in Capitec’s
